@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Duygu/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/Duygu/images/Varlık4.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANA SAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="courses.html">VİDEOLAR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                    <li><a href="giris.html">HESAP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>İletişim</h1>
+    </section>
+<!-------Contact Us------->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6002.904295816218!2d27.087085045695613!3d41.21191622531123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b37c97e9e3934d%3A0x1992eea50c784ef5!2zS3lrIEhheXJhYm9sdSBZdXJ0IE3DvGTDvHJsw7zEn8O8!5e0!3m2!1str!2str!4v1718479512070!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>Hayrabolu KYK</h5>
+                <p>Öğrenci Yurdu</p>
+            </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                        <h5>+90 282 315 35 57</h5>
+                        <p>Her Gün Açık, 06:00 - 24:00</p>
+                </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>info@tufmel.com</h5>
+                        <p>Sorunuzu Bize E-Posta İle Gönderin</p>
+                    </span>
+                    </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text"name="name" placeholder="Adınızı giriniz" required>
+                <input type="email"name="email" placeholder="E-Mail'inizi giriniz" required>
+                <input type="text"name="subject" placeholder="Konunuzu giriniz" required>
+                <textarea rows="8"name="message" placeholder="Mesajınızı giriniz" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Gönder</button>
+            </form>
+        </div>
+    </div>
+</section>
+ <!-------Footer------->
+ <section class="footer">
+    <h4>Hakkımızda</h4>
+    <p>© 2024 TufMel. Tüm hakları saklıdır. Bu web sitesi oyun tanıtımı için oluşturulmuştur.</p>
+    <div class="icons"> 
+        <a href="https://www.facebook.com/pages/Hayrabolu-Kyk-%C3%96%C4%9Frenci-Yurdu/578008068924268" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+       <a href="https://x.com/KykHayrabolu" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+       <a href="https://www.instagram.com/explore/locations/263773564/turkey/hayrabolu/hayrabolu-kyk-ogrenci-yurdu/" target="_blank">  <i class="fa-brands fa-instagram"></i></a>
+        
+        <a href="https://www.linkedin.com/in/hayrabolu-maili-9bb803114/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+        
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> By Duygu Yasuz</p>
+</section>
+    <!-------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

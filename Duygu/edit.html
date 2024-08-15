@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Duygu/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>TufMel - Kayıt ol / Giriş Yap</title>
+</head>
+<body class="giris">
+    <section class="sub-header1">
+        <nav>
+            <a href="index.html"><img src="/Duygu/images/Varlık4.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANA SAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="courses.html">VİDEOLAR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                    <li><a href="giris.html">HESAP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="login">
+        <form class="register-form" action="" method="post">
+            <h1>Hesap Değiştir</h1>
+            <input type="text" class="tpbox" placeholder="Kullanıcı Adınızı Giriniz">
+            <input type="email" class="tpbox" placeholder="E-Posta Giriniz">
+            <input type="password" class="tpbox" placeholder="Şifrenizi Giriniz">
+            <input type="submit" class="btn" value="Değiştir">
+        </form>
+    </section>
+ <!-------Footer------->
+ <section class="footer">
+    <h4 id="bgc">Hakkımızda</h4>
+    <p id="pbg">© 2024 TufMel. Tüm hakları saklıdır. Bu web sitesi oyun tanıtımı için oluşturulmuştur.</p>
+    <div class="icons"> 
+        <a href="https://www.facebook.com/pages/Hayrabolu-Kyk-%C3%96%C4%9Frenci-Yurdu/578008068924268" target="_blank"> <i class="fa-brands fa-facebook" id="ftg"></i></a>
+       <a href="https://x.com/KykHayrabolu" target="_blank"> <i class="fa-brands fa-x-twitter" id="ttg"></i></a>
+       <a href="https://www.instagram.com/explore/locations/263773564/turkey/hayrabolu/hayrabolu-kyk-ogrenci-yurdu/" target="_blank">  <i class="fa-brands fa-instagram" id="itg"></i></a>
+        
+        <a href="https://www.linkedin.com/in/hayrabolu-maili-9bb803114/" target="_blank"> <i class="fa-brands fa-linkedin" id="ltg"></i></a>
+        
+    </div>
+    <p id="iftg">Made with <i class="fa fa-heart" id="hbg"></i> By Duygu Yasuz</p>
+</section>
+    <!-------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

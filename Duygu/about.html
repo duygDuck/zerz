@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Duygu/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>TufMel - Hakkımızda</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/Duygu/images/Varlık4.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANA SAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="courses.html">VİDEOLAR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                    <li><a href="giris.html">HESAP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Hakkımızda</h1>
+    </section>
+<!-------About Us Content------->
+<section class="abut-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Oyun Dünyasında Yolculuğumuza Hoş Geldiniz</h1>
+            <p>Biz Oyun Tanıtım Ekibi olarak, oyun dünyasına tutkuyla bağlı bir grup geliştiriciyiz. Amacımız, oyunseverlere en iyi oyunları tanıtmak ve onları heyecan verici dünyalara götürmektir.<br><br>
+                <h3>Kurucu ve Baş Editör</h3>
+                >Duygu Yasuz
+                <br><br>
+                <h3>Grafik Tasarımcı</h3>
+                >Duygu Yasuz
+                <br><br>
+                <h3>Medya Yazarı</h3>
+                >Duygu Yasuz<br>
+                >Emir Yasuz
+                <br><br>
+                <h3>Misyonumuz</h3><br>
+Oyun Tanıtım Ekibi olarak, oyunseverlere en yeni ve en heyecan verici oyunları sunmak istiyoruz. Oyunlar hakkında doğru bilgiyi paylaşarak oyuncuların doğru seçimler yapmasına yardımcı oluyoruz.
+            </p>
+            <a href="index.html" class="hero-btn red-btn">ŞİMDİ KEŞFET</a>
+        </div>
+        <div class="about-col">
+            <img src="/Duygu/images/hakkimizda.png">
+        </div>
+    </div>
+</section>
+ <!-------Footer------->
+ <section class="footer">
+    <h4>Hakkımızda</h4>
+    <p>© 2024 TufMel. Tüm hakları saklıdır. Bu web sitesi oyun tanıtımı için oluşturulmuştur.</p>
+    <div class="icons"> 
+        <a href="https://www.facebook.com/pages/Hayrabolu-Kyk-%C3%96%C4%9Frenci-Yurdu/578008068924268" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+       <a href="https://x.com/KykHayrabolu" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+       <a href="https://www.instagram.com/explore/locations/263773564/turkey/hayrabolu/hayrabolu-kyk-ogrenci-yurdu/" target="_blank">  <i class="fa-brands fa-instagram"></i></a>
+        
+        <a href="https://www.linkedin.com/in/hayrabolu-maili-9bb803114/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+        
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> By Duygu Yasuz</p>
+</section>
+    <!-------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
